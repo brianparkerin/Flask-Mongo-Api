@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ 
+    <title> underfix - All StockMarkets</title>
+    <!--custom css-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css' ) }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css' ) }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logos-svg/favicon.png' ) }}">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- desktop version -->
+      <div class="inner-container desktop">
+        <span class="logo left">
+            <a href="/"><img src="{{ url_for('static', filename='img/logos-svg/logotype.png' )}}" alt="underfix.com"/></a>
+        </span>
+        <ul class="left">
+          <li class="desktop-li"><a href="{{ url_for('business' )}}">Business</a></li>
+          <li class="desktop-li"><a href="{{ url_for('explore' )}}">Explore</a></li>
+          <li class="desktop-li"><a href="{{ url_for('documentation' )}}">Docs</a></li>
+          <li class="desktop-li"><a href="{{ url_for('blog' )}}">Blog</a></li>
+          <li class="desktop-li"><a href="{{ url_for('pricing' )}}">Pricing</a></li>
+        </ul>
+
+        <ul class="right">
+          <li class="search-outer desktop-li">
+            <div class="search-outer">
+              <input type="text" class="search" placeholder="Search here"/>
+              <img src="{{ url_for('static', filename='img/icons/search-icon.png' )}}" class="search-hint" alt=""/>
+            </div>
+          </li>      
+          <li class="desktop-li">
+            <a class="boldy" href="{{ url_for('user' )}}"><i class="far fa-user-circle"></i> User </a>
+            
+          </li>
+        </ul>
+      </div>
+
+      <!-- mobile version -->
+      <div class="inner-container mobile">
+        <div class="mobile-logo">
+            <a href="/"><img src="{{ url_for('static', filename='img/logos-svg/logotype.png' )}}" /></a>
+        </div>
+        <button class="svg-button">
+          <svg
+            height="28"
+            class="octicon octicon-three-bars text-white"
+            viewBox="0 0 12 16"
+            version="1.1"
+            width="30"
+            aria-hidden="true"
+            >
+            <path
+              fill-rule="evenodd"
+              d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="drop-down-mobile">
+      <ul class="mobile-ul">
+        <li class="mobile-li"><a href="{{ url_for('business' )}}">Business</a></li>
+        <li class="mobile-li"><a href="{{ url_for('explore' )}}">Explore</a></li>
+        <li class="mobile-li"><a href="{{ url_for('documentation' )}}">Docs</a></li>
+        <li class="mobile-li"><a href="{{ url_for('blog' )}}">Blog</a></li>
+        <li class="mobile-li"><a href="{{ url_for('pricing' )}}">Pricing</a></li>
+        <li class="search-outer mobile-li">
+          <div class="search-outer search-outer-mobile">
+            <input type="text"
+              class="search search-mobile"
+              placeholder="Search"/>
+            <img src="{{ url_for('static', filename='img/icons/search-icon.png' )}}"
+              class="search-hint"
+              alt=""/>
+          </div>
+        </li>
+        <li class="mobile-li">
+          <a class="bold" href="{{ url_for('signing' )}}"> Sign In </a> <span class="or"> / </span>
+          <a class="bold" href="{{ url_for('signup' )}}"> Sign Up </a>
+        </li>
+      </ul>
+    </div>
+
+
+
+    {% block content %}
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <script>
+
+    let input = document.getElementsByClassName("search");
+    let searchhint = document.getElementsByClassName("search-hint");
+    let button = document.getElementsByClassName("svg-button");
+    let mobile = document.getElementsByClassName("drop-down-mobile");
+    let isOpen = false;
+
+    // Nav scroll up
+    var scroll1 = window.pageYOffset;
+        window.onscroll = function(){
+          var scroll2 = window.pageYOffset;
+          if (scroll1 > scroll2) {
+            document.querySelector('nav').style.top = "0";
+          }else{
+            document.querySelector('nav').style.top = "-100px";
+          }
+          scroll1 = scroll2;
+        }
+
+    // show hide search hint
+    for (let i = 0; i < input.length; i++) {
+    for (let i = 0; i < searchhint.length; i++) {
+        input[i].addEventListener("focus", () => {
+        searchhint[i].style.display = "none";
+        });
+
+        input[i].addEventListener("focusout", () => {
+        searchhint[i].style.display = "block";
+        });
+    }
+    }
+
+    // show hide mobile drop down
+    button[0].addEventListener("click", () => {
+    if (isOpen === false) {
+        // mobile[0].classList.remove("hide-lg");
+        mobile[0].style.height = "400px";
+        isOpen = true;
+    } else {
+        // mobile[0].classList.add("hide-lg");
+        mobile[0].style.height = "0";
+        isOpen = false;
+    }
+    });
+
+       
+    </script>
+  </body>
+</html>

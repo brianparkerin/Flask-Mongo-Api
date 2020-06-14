@@ -5,6 +5,7 @@ from bson import json_util
 from bson.objectid import ObjectId
 
 
+# AQUI INICIA NUESTRA - CRUD API
 # DataBase Connection with Flas_PyMongo Client
 app = Flask(__name__)
 app.config["MONGO_URI"] = "mongodb+srv://brian:123@cluster0-fpdvj.mongodb.net/flask-crud-api?retryWrites=true&w=majority"

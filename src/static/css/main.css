@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  .body {
+    background: whitesmoke;
+    color: black;
+  }
+  
+  .container {
+    background: #000000;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,.3);
+    transition: all .3s;
+  }
+  
+  .inner-container {
+    max-width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding-bottom: 16px;
+    padding-top: 16px;
+  }
+  
+  .left {
+    float: left;
+  }
+  
+  .right {
+    float: right;
+  }
+
+  .boldy {
+      margin-right: 15px;
+      margin-left: 45px;
+      height: 32px;
+      font-size: 20px;
+  }
+  
+  .boldy i{
+    font-size: 20px;
+}
+
+  div ul li a:hover{
+    color: #84817a;
+    transition: .5s;
+  }
+  
+  .desktop-li {
+    display: inline-block;
+    padding: 14px;
+    font-weight: 400;
+  }
+  
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo img {
+    position: relative;
+    top: -3px;
+    height: 42px;
+    margin-right: 45px;
+  }
+  
+  .or {
+    color: #586069;
+  }
+  
+  .search {
+    background-color: hsla(0, 0%, 100%, 0.125);
+    height: 32px;
+    border-radius: 3px;
+    border: none;
+    width: 340px;
+    position:relative;
+    top: -4px;
+    color: #84817a;
+    padding-left: 4px;
+    outline: none;
+    font-size: 1rem;
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace!important;
+}
+  
+  .search-outer {
+    position: relative;
+  }
+  
+  .search-hint {
+    position: absolute;
+    right: 9px;
+    top: 0px;
+    height: 23px;
+    
+  }
+  
+  .search:focus {
+    background: 0px 4px 10px rgba(0,0,0,.3);
+    color: #84817a;
+  }
+  
+  a {
+    text-decoration: none;
+    color: aliceblue;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 1.1rem;
+  }
+  
+  .bold {
+    font-weight: 500;
+  }
+  
+  /* mobile style */
+  .mobile-logo img {
+    height: 45px;
+    float: left;
+  }
+  
+  .svg-button {
+    float: right;
+    background: none;
+    border: none;
+    fill: #fff;
+    padding-top: 8px;
+    outline: none;
+  }
+  
+  .drop-down-mobile {
+    height: 0;
+    background: black;
+    overflow: hidden;
+    transition: height 1s;
+  }
+  
+  .mobile-li {
+    display: block;
+    padding: 15px;
+    border-top: 1px solid #444d56;
+  }
+  
+  .mobile-ul {
+    padding: 0 40px;
+  }
+  
+  .search-mobile {
+    width: 100%;
+  }
+  
+  .search-outer-mobile {
+    margin-top: 6px;
+  }

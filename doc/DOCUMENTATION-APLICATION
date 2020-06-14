@@ -1,21 +1,22 @@
-
-como empezar un projecto flask en linux:
-
-fujitsu@brian:~/Escritorio/flask-mongo-api$ python3 --version
-Python 3.8.3
-
-fujitsu@brian:~/Escritorio/flask-mongo-api$ mkdir python3
-
-fujitsu@brian:~/Escritorio/flask-mongo-api$ python3 -m venv venv
-
-fujitsu@brian:~/Escritorio/flask-mongo-api$ source venv/bin/activate
-
-(venv) fujitsu@brian:~/Escritorio/flask-mongo-api$ 
+URLs en las que trabajo:
+https://github.com/brianparkerin/underfix/tree/master/src/static/css
+https://github.com/brianparkerin/flask-gitpod-basic-server
+https://github.com/brianparkerin/Flask-Mongo-Api
 
 
+1.  - Como empezar desde Cero un Nuevo Projecto de Python Flask en linux:
+
+python3 --version
+
+mkdir python3
+
+python3 -m venv venv
+
+source venv/bin/activate
 
 
-install: 
+
+ Install: 
 
 python3 install flask pymongo
 
@@ -24,34 +25,30 @@ python3 install flas_pymongo
 python -m pip install pymongo[srv]
 
 
-Vocabulary:
-
-MongoDB vs MySQL.
-
-Collections. = Tablas.
-
-documents. = Datos.
+____________________________________________________________________________
 
 
 
+DISCLAIMER: MongoDB vs MySQL.
+
+· Collections. = Tablas.
+
+· Documents. = Datos.
 
 
+_____________________________________________________________________________
 
 
+2. - Como inicializar un projecto en Flask-python:
 
 
+Escritorio/code-Flask-BBuy-Web$ source venv/bin/activate
 
+(venv) Escritorio/code-Flask-BBuy-Web/src$ pip freeze
 
-como inicializar un projecto en Flask-python:
+(venv) Escritorio/code-Flask-BBuy-Web/src$ pip freeze --local > requirements.txt
 
-
-fujitsu@brian:~/Escritorio/code-Flask-BBuy-Web$ source venv/bin/activate
-
-(venv) fujitsu@brian:~/Escritorio/code-Flask-BBuy-Web/src$ pip freeze
-
-(venv) fujitsu@brian:~/Escritorio/code-Flask-BBuy-Web/src$ pip freeze --local > requirements.txt
-
-(venv) fujitsu@brian:~/Escritorio/code-Flask-BBuy-Web/src$ python3 index.py
+(venv) Escritorio/code-Flask-BBuy-Web/src$ python3 index.py
 
 
 
