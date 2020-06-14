@@ -1,0 +1,84 @@
+
+como empezar un projecto flask en linux:
+
+fujitsu@brian:~/Escritorio/flask-mongo-api$ python3 --version
+Python 3.8.3
+
+fujitsu@brian:~/Escritorio/flask-mongo-api$ mkdir python3
+
+fujitsu@brian:~/Escritorio/flask-mongo-api$ python3 -m venv venv
+
+fujitsu@brian:~/Escritorio/flask-mongo-api$ source venv/bin/activate
+
+(venv) fujitsu@brian:~/Escritorio/flask-mongo-api$ 
+
+
+
+
+install: 
+
+python3 install flask pymongo
+
+python3 install flas_pymongo
+
+python -m pip install pymongo[srv]
+
+
+Vocabulary:
+
+MongoDB vs MySQL.
+
+Collections. = Tablas.
+
+documents. = Datos.
+
+
+
+
+
+
+
+
+
+
+
+como inicializar un projecto en Flask-python:
+
+
+fujitsu@brian:~/Escritorio/code-Flask-BBuy-Web$ source venv/bin/activate
+
+(venv) fujitsu@brian:~/Escritorio/code-Flask-BBuy-Web/src$ pip freeze
+
+(venv) fujitsu@brian:~/Escritorio/code-Flask-BBuy-Web/src$ pip freeze --local > requirements.txt
+
+(venv) fujitsu@brian:~/Escritorio/code-Flask-BBuy-Web/src$ python3 index.py
+
+
+
+
+Nota: 
+
+apartir de aqui ya tienes un ejemplo practico de una API-Crud en Python-Mongo-Flask. Usando algunas Bibliotecas
+
+Pero luego para seguir extendiendo toda esta funcionalidad probablemente vas a querer utilizar un "ORM". (como GraphQL)
+El "ORM" basicamente te permite hacer las funciones iguales pero sin escribirlas todas desde cero...
+siemplemente defines un Schema y empiezas hacer consultas... Asi podemos interactuar con bases de datos y ahcer operaciones usando funciones ya creadas...
+
+
+
+Esta aplciacion la seguiremos...
+
+
+- relacionando cada usuario/cliente a productos que haya comprado y las reviews que deja...
+
+- cada usuarion tiene autenticacion por tokens, passport, secciones y cookies, y logeo a traves de redes sociales dentro de la API.
+
+- añadir a los datos un manejo de archivo imagen, video, y documento PDF dentro de la API.
+
+- Exponer los datos para aplicaciones moviles y del frontend, como lo son VueJS y Flutter para que puedan ser consumidos por las aplicaiones del navegador desde las aplicaiones de neustro servidor.
+
+- Por ultimo montar todo esto en un container de docker, para finalmente llevarlo a hacer Deploy en nuestros servidores. 
+
+- Finalmente se inicia las nuevas etapas de administracion de sistemas con: procesos de integracion continua testing.
+
+
