@@ -1,12 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
-
-  .body {
-    background: whitesmoke;
-    color: black;
-  }
+  * {
+      margin: 0;
+      padding: 0;
+    }
   
   .container {
     background: #000000;
@@ -156,3 +151,6 @@
   .search-outer-mobile {
     margin-top: 6px;
   }
+
+
+
